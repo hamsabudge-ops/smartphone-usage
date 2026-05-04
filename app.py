@@ -20,7 +20,7 @@ plt.show()
 df.drop(['transaction_id','user_id'], axis=1, inplace=True)
 X = df.drop('addicted_label', axis=1)
 y = df['addicted_label']
-X_train, X_test, y_train, y_test = train_test_split(
+X_train, X_test, y_train, y_test = train_test_split
     X, y, test_size=0.2, random_state=42
   accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
